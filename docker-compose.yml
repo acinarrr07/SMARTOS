@@ -1,0 +1,18 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8001:8000"
+    environment:
+      SMG_STORAGE_DIR: /data
+      SMG_DATABASE_URL: sqlite:////data/smart_meal_guide.db
+      SMG_FRONTEND_ORIGINS: ${SMG_FRONTEND_ORIGINS:-http://localhost:8000,http://127.0.0.1:8000}
+      SMG_COOKIE_SECURE: ${SMG_COOKIE_SECURE:-false}
+      SMG_COOKIE_SAMESITE: ${SMG_COOKIE_SAMESITE:-lax}
+    volumes:
+      - smg_data:/data
+    restart: unless-stopped
+volumes:
+  smg_data:

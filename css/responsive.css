@@ -1,0 +1,128 @@
+@media (max-width: 1080px) {
+  .main-nav { gap: 18px; }
+  .hero-grid { gap: 38px; }
+  .daily-layout { grid-template-columns: minmax(0,1fr) 260px; }
+  .weekly-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .discover-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 800px) {
+  .wrap { width: min(100% - 40px, var(--content-width)); }
+  .header-inner { height: 68px; }
+  .main-nav, .profile-button { display: none; }
+  .mobile-menu-button { width: 36px; height: 36px; border: 1px solid var(--line); background: transparent; border-radius: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 5px; cursor: pointer; }
+  .mobile-menu-button span { width: 14px; height: 1px; background: var(--green); }
+  .mobile-nav { display: none; padding: 8px 20px 17px; border-top: 1px solid var(--line); background: var(--paper); }
+  .mobile-nav.open { display: grid; }
+  .mobile-nav button { padding: 12px 0; text-align: left; border: 0; border-bottom: 1px solid var(--line); background: none; color: var(--green); font-size: 12px; }
+  .hero-grid { min-height: auto; grid-template-columns: 1fr 1fr; gap: 25px; padding-top: 32px; }
+  .hero-copy h1 { font-size: clamp(45px,7vw,65px); }
+  .hero-visual { height: 350px; }
+  .daily-layout { grid-template-columns: 1fr; }
+  .nutrition-card { display: grid; grid-template-columns: 1fr 1fr; column-gap: 28px; min-height: auto; }
+  .nutrition-card-head, .nutrition-card h3, .nutrition-card > .muted, .nutrition-foot { grid-column: 1/-1; }
+  .nutrition-card h3 { margin-top: 12px; }
+  .calorie-total { margin: 12px 0; }
+  .macro-list { grid-column: 2; grid-row: 3 / span 2; align-self: center; }
+  .featured-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .community-layout { grid-template-columns: 1fr; gap: 22px; }
+  .community-aside { position: static; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .community-photo-note { margin-top: 0; }
+  .detail-hero { gap: 25px; }
+  .detail-photo-wrap { height: 340px; }
+  .admin-stats { grid-template-columns: repeat(2,1fr); }
+}
+@media (max-width: 560px) {
+  .wrap { width: calc(100% - 32px); }
+  .demo-ribbon { font-size: 8px; letter-spacing: .04em; }
+  .header-inner { gap: 12px; }
+  .brand-mark { width: 34px; height: 34px; }
+  .header-actions { gap: 9px; }
+  .icon-button { width: 33px; height: 33px; }
+  .language-toggle { font-size: 9px; }
+  .page-intro { padding-top: 24px; align-items: flex-start; gap: 8px; flex-direction: column; }
+  .hero-grid { grid-template-columns: 1fr; padding-top: 25px; gap: 22px; }
+  .hero-copy { padding: 0; }
+  .hero-copy h1 { font-size: clamp(51px, 15vw, 69px); }
+  .hero-description { font-size: 12px; margin-bottom: 20px; }
+  .hero-footnote { margin-top: 24px; }
+  .hero-visual { height: 310px; border-radius: 130px 130px 5px 5px; }
+  .section-block { margin-top: 72px; }
+  .section-heading { align-items: flex-end; margin-bottom: 20px; }
+  .section-heading h2 { font-size: 31px; }
+  .section-heading > .text-button { font-size: 9px; gap: 4px; }
+  .day-selector { gap: 0; justify-content: space-between; }
+  .day-tab { width: auto; flex: 1; padding-inline: 5px; min-height: 54px; }
+  .menu-grid { grid-template-columns: 1fr; gap: 12px; }
+  .menu-card { display: grid; grid-template-columns: 115px 1fr; min-height: 135px; }
+  .menu-card-image { height: 100%; min-height: 135px; }
+  .card-body { padding: 13px 12px; }
+  .card-kicker { font-size: 7px; margin-bottom: 5px; }
+  .card-title { font-size: 18px; }
+  .card-description { font-size: 9px; min-height: auto; margin-bottom: 8px; }
+  .card-meta { padding-top: 8px; }
+  .nutrition-card { display: block; padding: 22px; }
+  .nutrition-card h3 { margin-top: 16px; }
+  .calorie-total { margin: 19px 0; }
+  .macro-list { display: block; }
+  .featured-grid { grid-template-columns: 1fr; }
+  .featured-card { min-height: 235px; }
+  .page-wrap { padding-top: 48px; padding-bottom: 68px; }
+  .page-heading-row { align-items: flex-start; flex-direction: column; margin-bottom: 30px; gap: 18px; }
+  .page-heading-row h1 { font-size: 47px; }
+  .weekly-grid { grid-template-columns: 1fr; gap: 10px; }
+  .weekly-day { padding: 15px; }
+  .weekly-day-head strong { font-size: 21px; }
+  .weekly-item { margin: 9px 0; }
+  .weekly-item img { width: 43px; height: 43px; }
+  .weekly-item strong { font-size: 11px; }
+  .discover-toolbar { flex-direction: column; }
+  .filter-toggle { justify-content: center; }
+  .filter-panel { align-items: flex-start; flex-direction: column; gap: 16px; }
+  .filter-group { align-items: flex-start; flex-direction: column; gap: 8px; }
+  .clear-filters { margin-left: 0; }
+  .discover-grid { grid-template-columns: 1fr; }
+  .discover-grid .menu-card { grid-template-columns: 125px 1fr; }
+  .detail-hero { grid-template-columns: 1fr; }
+  .detail-photo-wrap { height: 325px; border-radius: 130px 130px 5px 5px; }
+  .detail-copy h1 { font-size: 46px; }
+  .detail-stats { gap: 18px; }
+  .detail-columns { grid-template-columns: 1fr; }
+  .detail-section { margin-top: 45px; }
+  .nutrient-grid { grid-template-columns: repeat(2,1fr); }
+  .community-mark { width: 75px; height: 75px; }
+  .community-toolbar { align-items: flex-start; gap: 12px; }
+  .community-layout { padding-top: 18px; }
+  .review-card { padding: 15px; }
+  .community-aside { grid-template-columns: 1fr; }
+  .profile-card { flex-wrap: wrap; padding: 20px; gap: 13px; }
+  .profile-card h2 { font-size: 20px; }
+  .profile-card .button { margin-left: 0; width: 100%; }
+  .profile-stats { gap: 7px; }
+  .profile-stats > div { padding: 12px 9px; }
+  .profile-stats strong { font-size: 20px; }
+  .profile-stats span { font-size: 8px; }
+  .admin-top { align-items: flex-start; flex-direction: column; }
+  .admin-top h1 { font-size: 44px; }
+  .admin-stats { gap: 8px; }
+  .admin-stat { padding: 13px; }
+  .admin-stat strong { font-size: 24px; }
+  .admin-grid { grid-template-columns: 1fr; }
+  .admin-panel-wide { grid-column: auto; }
+  .moderation-row { flex-wrap: wrap; }
+  .moderation-actions { width: 100%; padding-left: 42px; }
+  .footer-main { align-items: flex-start; flex-direction: column; padding-block: 28px; gap: 15px; }
+  .footer-main > p { font-size: 17px; }
+  .footer-links { gap: 18px; flex-wrap: wrap; }
+  .footer-bottom { flex-wrap: wrap; gap: 9px; font-size: 9px; }
+  .modal-card { padding: 23px 18px; }
+  .modal-card h2 { font-size: 28px; }
+  .toast-region { left: 12px; right: 12px; bottom: 12px; }
+  .toast { max-width: none; }
+}
+
+@media (max-width: 700px) {
+  .profile-card-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}

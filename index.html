@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ef">
+  <meta name="description" content="Smart Meal Guide — Antalya Bilim Üniversitesi yemekhane menüleri, yemek içerikleri ve beslenme rehberi.">
+  <meta property="og:title" content="Smart Meal Guide | Antalya Bilim Üniversitesi">
+  <meta property="og:description" content="Günlük menüyü keşfet, yemek içeriklerini ve tahmini besin değerlerini incele.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>Smart Meal Guide | Antalya Bilim Üniversitesi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="demo-ribbon"><span class="pulse-dot"></span><span data-i18n="demoNotice">DEMO SÜRÜMÜ · Örnek menü ve örnek kullanıcı içerikleri</span></div>
+  <header class="site-header">
+    <div class="header-inner wrap">
+      <a class="brand" href="#home" data-nav="home" aria-label="Smart Meal Guide ana sayfa">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M8 22h32c-1.8 11-7.1 17-16 17S9.8 33 8 22Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M5 18c4 0 4-5 8-5s4 5 8 5 4-5 8-5 4 5 8 5 4-5 8-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M20 7c2 2 2 4 0 6M28 5c2 2 2 4 0 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </span>
+        <span class="brand-copy"><strong>smart<span>meal</span></strong><small>GUIDE</small></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Ana navigasyon">
+        <button class="nav-link active" data-nav="home" data-i18n="navHome">Ana Sayfa</button>
+        <button class="nav-link" data-nav="weekly" data-i18n="navWeekly">Haftalık Menü</button>
+        <button class="nav-link" data-nav="discover" data-i18n="navDiscover">Yemekleri Keşfet</button>
+        <button class="nav-link" data-nav="community" data-i18n="navCommunity">Topluluk</button>
+      </nav>
+
+      <div class="header-actions">
+        <button class="language-toggle" id="language-toggle" aria-label="Change language">TR <span>/</span> EN</button>
+        <button class="icon-button" id="search-trigger" aria-label="Ara" title="Ara"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg></button>
+        <button class="profile-button" id="profile-trigger"><span class="avatar avatar-small">A</span><span data-i18n="profile">Profil</span></button>
+        <button class="mobile-menu-button" id="mobile-menu-button" aria-label="Menüyü aç"><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobile-nav">
+      <button data-nav="home" data-i18n="navHome">Ana Sayfa</button>
+      <button data-nav="weekly" data-i18n="navWeekly">Haftalık Menü</button>
+      <button data-nav="discover" data-i18n="navDiscover">Yemekleri Keşfet</button>
+      <button data-nav="community" data-i18n="navCommunity">Topluluk</button>
+      <button data-nav="admin" data-i18n="navAdmin">Yönetici Paneli (Demo)</button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page active" id="page-home" data-page="home">
+      <div class="wrap">
+        <div class="page-intro home-intro">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="campusLabel">ANTALYA BİLİM ÜNİVERSİTESİ · YEMEKHANE</span></div>
+            <p class="date-line" id="today-date">24 Kasım 2026, Salı</p>
+          </div>
+          <div class="sync-status"><span class="status-dot"></span><span data-i18n="demoMenuStatus">Örnek menü gösteriliyor</span></div>
+        </div>
+
+        <section class="hero-grid" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="heroEyebrow">BUGÜN NE YESEK?</span></p>
+            <h1 id="hero-title" data-i18n="heroTitle">İyi yemek,<br><em>iyi hissettirir.</em></h1>
+            <p class="hero-description" data-i18n="heroDescription">Yemekhanenin günlük menüsünü keşfet. İçeriğini öğren, besin değerlerini incele ve sana en uygun seçimi yap.</p>
+            <div class="hero-actions">
+              <button class="button button-dark" data-nav="home" data-scroll="daily-menu"><span data-i18n="seeTodayMenu">Bugünün Menüsünü Gör</span><span class="button-arrow">↗</span></button>
+              <button class="text-button" data-nav="weekly"><span data-i18n="seeWeek">Haftalık menü</span><span>→</span></button>
+            </div>
+            <div class="hero-footnote"><span class="tiny-star">✳</span><span data-i18n="heroFootnote">Daha bilinçli seçimler için küçük bir rehber.</span></div>
+          </div>
+          <div class="hero-visual">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1300&q=85" alt="Temsili taze ve dengeli yemek kasesi" class="hero-image" onerror="this.src='https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1300&q=80'">
+            <div class="hero-image-shade"></div>
+            <div class="hero-image-note"><span class="note-icon">✳</span><span><strong data-i18n="freshChoice">Bilinçli seçim</strong><small data-i18n="freshChoiceSub">Her lokmada daha çok bilgi</small></span></div>
+            <span class="image-disclaimer" data-i18n="representativeImage">Temsili görsel</span>
+            <div class="hero-stamp"><span>SMG</span><small>EST.<br>2026</small></div>
+          </div>
+        </section>
+
+        <section class="daily-section section-block" id="daily-menu">
+          <div class="section-heading">
+            <div><p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="dailyEyebrow">GÜNÜN SEÇKİSİ</span></p><h2 data-i18n="dailyTitle">Bugünün menüsü</h2></div>
+            <button class="text-button" data-nav="weekly"><span data-i18n="allWeek">Tüm haftayı gör</span><span>→</span></button>
+          </div>
+          <div class="day-selector" id="day-selector" role="group" aria-label="Menü günü">
+            <button class="day-tab" data-day="0"><small>23</small><span data-day-label="0">Pzt</span></button>
+            <button class="day-tab active" data-day="1"><small>24</small><span data-day-label="1">Sal</span></button>
+            <button class="day-tab" data-day="2"><small>25</small><span data-day-label="2">Çar</span></button>
+            <button class="day-tab" data-day="3"><small>26</small><span data-day-label="3">Per</span></button>
+            <button class="day-tab" data-day="4"><small>27</small><span data-day-label="4">Cum</span></button>
+          </div>
+          <div class="daily-layout">
+            <div class="menu-column">
+              <div class="menu-grid" id="daily-menu-grid"></div>
+            </div>
+            <aside class="nutrition-card">
+              <div class="nutrition-card-head"><span class="mini-icon">◌</span><span data-i18n="nutritionSnapshot">BESLENME ÖZETİ</span></div>
+              <h3 data-i18n="dailyEstimate">Günün tahmini<br>değerleri</h3>
+              <p class="muted small" data-i18n="nutritionNote">Menüdeki örnek porsiyonlar üzerinden hesaplanan demo değerler.</p>
+              <div class="calorie-total"><strong id="daily-calories">—</strong><span>kcal</span></div>
+              <div class="macro-list" id="macro-list"></div>
+              <div class="nutrition-foot"><span>ⓘ</span><span data-i18n="nutritionDisclaimer">Gerçek porsiyon ve tariflere göre değişebilir.</span></div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="featured-section section-block">
+          <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="featuredEyebrow">MENÜDEN ÖNE ÇIKANLAR</span></p><h2 data-i18n="featuredTitle">Biraz daha yakından</h2></div><button class="text-button" data-nav="discover"><span data-i18n="discoverAll">Tüm yemekleri keşfet</span><span>→</span></button></div>
+          <div class="featured-grid" id="featured-grid"></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="page" id="page-weekly" data-page="weekly">
+      <div class="wrap page-wrap">
+        <div class="page-heading-row"><div><p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="weeklyEyebrow">23–27 KASIM 2026 · DEMO</span></p><h1 data-i18n="weeklyTitle">Haftalık menü<span class="heading-period">.</span></h1><p class="page-lead" data-i18n="weeklyLead">Haftanın menüsüne göz at, her günün yemek detaylarını ve beslenme bilgilerini incele.</p></div><div class="week-badge"><span>✳</span><span data-i18n="weekDemo">Örnek hafta</span></div></div>
+        <div class="weekly-grid" id="weekly-grid"></div>
+        <div class="info-banner"><span class="info-banner-icon">ⓘ</span><p data-i18n="weeklyDisclaimer">Bu ekrandaki menü içerikleri arayüz testi için hazırlanmış örnek verilerdir. OBS'den alınmamıştır.</p></div>
+      </div>
+    </section>
+
+    <section class="page" id="page-discover" data-page="discover">
+      <div class="wrap page-wrap">
+        <div class="page-heading-row"><div><p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="discoverEyebrow">YEMEK KÜTÜPHANESİ</span></p><h1 data-i18n="discoverTitle">Ne arıyorsun<span class="heading-period">?</span></h1><p class="page-lead" data-i18n="discoverLead">Yemekleri ara, içeriklerini keşfet ve beslenme tercihine göre filtrele.</p></div><span class="collection-count" id="collection-count">08 YEMEK</span></div>
+        <div class="discover-toolbar">
+          <label class="search-field"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg><input type="search" id="dish-search" placeholder="Yemek adı ara..." data-i18n-placeholder="searchPlaceholder"><kbd>⌘ K</kbd></label>
+          <button class="filter-toggle" id="filter-toggle"><span>☷</span><span data-i18n="filters">Filtreler</span><span class="filter-count" id="filter-count">0</span></button>
+        </div>
+        <div class="filter-panel" id="filter-panel">
+          <div class="filter-group"><span class="filter-label" data-i18n="dietPreference">DİYET TERCİHİ</span><div class="filter-chips"><button class="filter-chip" data-filter="vegan">Vegan</button><button class="filter-chip" data-filter="vegetarian" data-i18n="vegetarian">Vejetaryen</button><button class="filter-chip" data-filter="glutenFree" data-i18n="glutenFree">Glutensiz</button></div></div>
+          <div class="filter-group"><span class="filter-label" data-i18n="nutritionPreference">BESLENME</span><div class="filter-chips"><button class="filter-chip" data-filter="lowCal" data-i18n="lowCalorie">Düşük kalorili</button><button class="filter-chip" data-filter="highProtein" data-i18n="highProtein">Yüksek protein</button></div></div>
+          <button class="clear-filters" id="clear-filters" data-i18n="clearFilters">Temizle</button>
+        </div>
+        <div class="result-line"><span id="result-text" data-i18n="allMeals">Tüm yemekler</span><span data-i18n="sampleLibrary">Örnek yemek kütüphanesi</span></div>
+        <div class="discover-grid" id="discover-grid"></div>
+        <div class="empty-state hidden" id="empty-state"><span>⌕</span><h3 data-i18n="noResults">Aradığın yemek bulunamadı.</h3><p data-i18n="noResultsSub">Filtreleri değiştirerek yeniden deneyebilirsin.</p></div>
+      </div>
+    </section>
+
+    <section class="page" id="page-detail" data-page="detail">
+      <div class="wrap page-wrap" id="dish-detail-content"></div>
+    </section>
+
+    <section class="page" id="page-community" data-page="community">
+      <div class="wrap page-wrap">
+        <div class="page-heading-row"><div><p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="communityEyebrow">BİRLİKTE DAHA GÜZEL</span></p><h1 data-i18n="communityTitle">Yemek masasında<br><em>sen de varsın.</em></h1><p class="page-lead" data-i18n="communityLead">Yemekler hakkındaki deneyimleri oku, kendi yorumunu ve fotoğrafını paylaş.</p></div><div class="community-mark">✳<small>COMMUNITY<br>TABLE</small></div></div>
+        <div class="community-toolbar"><div><strong id="review-count">0</strong> <span data-i18n="communityReviews">yorum</span><span class="demo-caption" data-i18n="demoReviews">· Demo yorumlar</span></div><label class="sort-select"><span data-i18n="sortBy">Sırala</span><select id="review-sort"><option value="newest" data-i18n="newest">En yeni</option><option value="oldest" data-i18n="oldest">En eski</option></select></label></div>
+        <div class="community-layout"><div class="review-feed" id="community-feed"></div><aside class="community-aside"><div class="community-aside-card"><span class="aside-spark">✳</span><h3 data-i18n="shareExperience">Deneyimini paylaş.</h3><p data-i18n="shareExperienceSub">Bir fotoğraf, kısa bir not… Yemekhanedeki deneyimin başka birine yol gösterebilir.</p><button class="button button-dark button-full" id="community-write"><span data-i18n="writeReview">Yorum yaz</span><span>↗</span></button></div><div class="community-photo-note"><strong data-i18n="realPhotos">Gerçek tabaklar, gerçek deneyimler.</strong><p data-i18n="realPhotosSub">Kullanıcı fotoğrafları, örnek yemek görsellerinden ayrı tutulur. Bu demo sürümünde görsel yüklemeler yalnızca tarayıcı önizlemesi olarak çalışır.</p></div></aside></div>
+      </div>
+    </section>
+
+    <section class="page" id="page-profile" data-page="profile">
+      <div class="wrap page-wrap narrow-wrap"><p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="yourSpace">SANA ÖZEL</span></p><h1 data-i18n="profileTitle">Profilim<span class="heading-period">.</span></h1><div class="profile-card"><div class="avatar avatar-large">A</div><div><h2 id="profile-name">Anıl'ın demo profili</h2><p class="muted" id="profile-status" data-i18n="demoAccount">Yerel demo oturumu · Gerçek hesap bağlantısı bulunmuyor</p></div><div class="profile-card-actions"><button class="button button-outline" id="profile-edit" data-i18n="editProfile">Profili düzenle</button><button class="text-button" id="profile-logout" data-i18n="logout">Oturumu kapat</button></div></div><div class="profile-stats"><div><strong id="profile-review-count">0</strong><span data-i18n="yourReviews">Yorumun</span></div><div><strong>TR / EN</strong><span data-i18n="languageSetting">Dil seçeneği</span></div><div><strong id="profile-account-state">DEMO</strong><span data-i18n="accountStatus">Hesap durumu</span></div></div><div class="profile-actions"><button class="list-action" data-nav="community"><span>✳</span><span data-i18n="myCommunity">Topluluğa dön</span><span>→</span></button><button class="list-action" data-nav="admin"><span>▦</span><span data-i18n="adminDemo">Yönetici paneli demosu</span><span>→</span></button></div></div>
+    </section>
+
+    <section class="page" id="page-admin" data-page="admin">
+      <div class="wrap page-wrap">
+        <div class="admin-top"><div><p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="adminEyebrow">SMART MEAL GUIDE · BACK OFFICE</span></p><h1 data-i18n="adminTitle">Yönetim merkezi<span class="heading-period">.</span></h1><p class="page-lead" data-i18n="adminLead">Menüleri, yemek verilerini ve topluluk içeriklerini tek yerden yönet.</p></div><span class="demo-admin-badge" id="admin-mode-badge">DEMO ADMIN</span></div>
+        <div class="info-banner hidden" id="admin-access-notice"><span class="info-banner-icon">ⓘ</span><p id="admin-access-message"></p></div>
+        <div class="admin-stats" id="admin-stats"><div class="admin-stat"><span data-i18n="totalDishes">Yemek kaydı</span><strong id="admin-total-dishes">12</strong><small class="stat-neutral" data-i18n="sampleData">Örnek veri</small></div><div class="admin-stat"><span data-i18n="incompleteData">Eksik veri</span><strong id="admin-missing-count">03</strong><small class="stat-warning" data-i18n="needsReview">Kontrol bekliyor</small></div><div class="admin-stat"><span data-i18n="totalReviews">Toplam yorum</span><strong id="admin-review-count">03</strong><small class="stat-neutral" data-i18n="demoContent">Demo içerik</small></div><div class="admin-stat"><span data-i18n="obsConnection">OBS bağlantısı</span><strong class="admin-offline" id="admin-obs-status" data-i18n="notConnected">Bağlı değil</strong><small class="stat-neutral" id="admin-obs-note" data-i18n="authRequired">Yetkilendirme gerekli</small></div></div>
+        <div class="admin-grid" id="admin-grid"><section class="admin-panel"><div class="panel-heading"><div><p class="eyebrow">01 / MENU</p><h2 data-i18n="menuOperations">Menü işlemleri</h2></div><span class="panel-icon">▤</span></div><div class="upload-zone" id="pdf-dropzone"><input type="file" id="pdf-upload" accept="application/pdf,.pdf" hidden><span class="upload-icon">↑</span><strong data-i18n="uploadMenuPdf">Haftalık menü PDF'sini yükle</strong><small data-i18n="uploadMenuHint">PDF dosyasını seçerek arayüz akışını deneyebilirsin.</small><button class="button button-outline" id="choose-pdf" data-i18n="chooseFile">Dosya seç</button><p id="pdf-status" class="upload-status" aria-live="polite"></p></div><div class="connection-row"><span><i class="status-dot status-dot-muted"></i><span data-i18n="obsStatus">OBS otomatik senkronizasyonu</span></span><span class="pill pill-muted" data-i18n="waiting">Beklemede</span></div></section>
+          <section class="admin-panel"><div class="panel-heading"><div><p class="eyebrow">02 / DATA QUALITY</p><h2 data-i18n="missingDishData">Eksik yemek verileri</h2></div><span class="panel-icon">◈</span></div><div class="missing-list" id="missing-list"><div class="missing-item"><span class="missing-thumb">🍗</span><span><strong>Tavuklu Sebzeli Makarna</strong><small data-i18n="missingPhotoRecipe">Fotoğraf · Tarif · Besin değerleri</small></span><span class="pill pill-warning">Eksik</span></div><div class="missing-item"><span class="missing-thumb">🥘</span><span><strong>Etli Nohut</strong><small data-i18n="missingNutrition">Malzemeler · Besin değerleri</small></span><span class="pill pill-warning">Eksik</span></div><div class="missing-item"><span class="missing-thumb">🥗</span><span><strong>Mevsim Salata</strong><small data-i18n="allergenCheck">Alerjen kontrolü</small></span><span class="pill pill-warning">Kontrol</span></div></div></section>
+          <section class="admin-panel admin-panel-wide"><div class="panel-heading"><div><p class="eyebrow">03 / COMMUNITY</p><h2 data-i18n="reviewModeration">Yorum moderasyonu</h2></div><button class="text-button" data-nav="community"><span data-i18n="viewCommunity">Topluluğu görüntüle</span><span>→</span></button></div><div class="moderation-list" id="moderation-list"></div></section>
+          <section class="admin-panel admin-panel-wide"><div class="panel-heading"><div><p class="eyebrow">04 / REPORTS</p><h2>Bildirimler / Reports</h2></div></div><div class="moderation-list" id="admin-report-list"><p class="muted small">Henüz rapor yok.</p></div></section>
+        </div>
+        <div class="info-banner" id="admin-info-banner"><span class="info-banner-icon">ⓘ</span><p data-i18n="adminDemoDisclaimer">Yönetici panelindeki işlemler arayüz demosudur. Henüz sunucuya, OBS'ye veya kalıcı veritabanına işlem gönderilmez.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-main"><a class="brand footer-brand" href="#home" data-nav="home"><span class="brand-mark"><svg viewBox="0 0 48 48" fill="none"><path d="M8 22h32c-1.8 11-7.1 17-16 17S9.8 33 8 22Z" stroke="currentColor" stroke-width="2.5"/><path d="M5 18c4 0 4-5 8-5s4 5 8 5 4-5 8-5 4 5 8 5 4-5 8-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></span><span class="brand-copy"><strong>smart<span>meal</span></strong><small>GUIDE</small></span></a><p data-i18n="footerLine">Daha bilinçli tabaklar, daha iyi günler.</p><div class="footer-links"><button data-nav="weekly" data-i18n="navWeekly">Haftalık Menü</button><button data-nav="community" data-i18n="navCommunity">Topluluk</button><button data-nav="admin" data-i18n="navAdmin">Yönetim</button></div></div>
+    <div class="wrap footer-bottom"><span>© 2026 Smart Meal Guide</span><span data-i18n="footerDisclaimer">Üniversite projesi · Demo sürüm</span><button id="back-to-top" data-i18n="backTop">Yukarı çık ↑</button></div>
+  </footer>
+
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <div class="modal-root" id="modal-root" aria-live="polite"></div>
+  <script src="js/runtime-config.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

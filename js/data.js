@@ -1,0 +1,130 @@
+export const dishes = [
+  {
+    id: 'domates-corbasi', name: 'Domates Çorbası', en: 'Tomato Soup', category: 'Çorba', categoryEn: 'Soup',
+    description: 'Domatesin hafif ekşiliği ve yumuşak kıvamıyla klasik bir başlangıç.', descriptionEn: 'A classic starter with a gentle tomato tang and a smooth texture.',
+    image: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=82', calories: 118, protein: 3.4, carbs: 16.2, fat: 4.4, fiber: 2.8, salt: 1.1,
+    tags: ['vegetarian'], allergens: ['Gluten', 'Süt ürünleri'], ingredients: [['Domates','180 g'],['Soğan','25 g'],['Un','8 g'],['Süt','40 ml'],['Zeytinyağı','5 ml']],
+    ingredientsEn: [['Tomato','180 g'],['Onion','25 g'],['Flour','8 g'],['Milk','40 ml'],['Olive oil','5 ml']],
+    steps: ['Soğanı zeytinyağında yumuşayana kadar sotele.','Doğranmış domatesi ekleyip birkaç dakika pişir.','Un ve sütü kontrollü ekleyerek kıvam alana kadar karıştır.'],
+    stepsEn: ['Soften the onion in olive oil.','Add chopped tomatoes and cook for a few minutes.','Add flour and milk gradually, stirring until smooth.'], portion: '250 ml', prep: '10 dk', cook: '20 dk', estimate: true
+  },
+  {
+    id: 'et-yahni', name: 'Et Yahni', en: 'Beef Stew', category: 'Ana yemek', categoryEn: 'Main course',
+    description: 'Sebzelerle birlikte yavaş pişirilmiş, sulu ve doyurucu dana eti yemeği.', descriptionEn: 'A comforting beef dish slowly braised with vegetables.',
+    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=82', calories: 342, protein: 29.5, carbs: 12.8, fat: 18.7, fiber: 2.1, salt: 1.4,
+    tags: ['highProtein'], allergens: [], ingredients: [['Dana eti','120 g'],['Soğan','35 g'],['Domates salçası','12 g'],['Sıvı yağ','8 g'],['Havuç','35 g']],
+    ingredientsEn: [['Beef','120 g'],['Onion','35 g'],['Tomato paste','12 g'],['Vegetable oil','8 g'],['Carrot','35 g']],
+    steps: ['Dana etini kuşbaşı doğrayıp tencerede mühürle.','Soğan ve havucu ekleyerek kısa süre sotele.','Salça ve sıcak su ekle; et yumuşayana kadar kısık ateşte pişir.'],
+    stepsEn: ['Dice and sear the beef in a pot.','Add onion and carrot and sauté briefly.','Add tomato paste and hot water; simmer until tender.'], portion: '220 g', prep: '15 dk', cook: '60 dk', estimate: true
+  },
+  {
+    id: 'bulgur-pilavi', name: 'Bulgur Pilavı', en: 'Bulgur Pilaf', category: 'Yan yemek', categoryEn: 'Side dish',
+    description: 'Domates salçası ve soğanla lezzetlendirilmiş tane tane bulgur pilavı.', descriptionEn: 'Fluffy bulgur pilaf seasoned with tomato paste and onion.',
+    image: 'https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=900&q=82', calories: 226, protein: 6.1, carbs: 39.5, fat: 5.2, fiber: 6.4, salt: 0.8,
+    tags: ['vegetarian'], allergens: ['Gluten'], ingredients: [['Pilavlık bulgur','65 g'],['Soğan','15 g'],['Domates salçası','8 g'],['Zeytinyağı','6 g']],
+    ingredientsEn: [['Bulgur','65 g'],['Onion','15 g'],['Tomato paste','8 g'],['Olive oil','6 g']],
+    steps: ['Soğanı yağda hafifçe kavur.','Salçayı ekleyip kokusu çıkana kadar karıştır.','Bulgur ve sıcak suyu ekle; suyunu çekene kadar pişir.'],
+    stepsEn: ['Gently sauté the onion in oil.','Stir in the tomato paste.','Add bulgur and hot water; cook until the liquid is absorbed.'], portion: '180 g', prep: '8 dk', cook: '18 dk', estimate: true
+  },
+  {
+    id: 'mevsim-salata', name: 'Mevsim Salata', en: 'Seasonal Salad', category: 'Salata', categoryEn: 'Salad',
+    description: 'Mevsim yeşillikleri, havuç ve limonlu hafif sosla hazırlanır.', descriptionEn: 'Seasonal greens and carrot tossed with a light lemon dressing.',
+    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=82', calories: 86, protein: 2.2, carbs: 9.3, fat: 4.8, fiber: 3.7, salt: 0.4,
+    tags: ['vegan','vegetarian','glutenFree','lowCal'], allergens: [], ingredients: [['Marul','50 g'],['Havuç','30 g'],['Mor lahana','25 g'],['Limon suyu','10 ml'],['Zeytinyağı','5 ml']],
+    ingredientsEn: [['Lettuce','50 g'],['Carrot','30 g'],['Red cabbage','25 g'],['Lemon juice','10 ml'],['Olive oil','5 ml']],
+    steps: ['Yeşillikleri bol suyla yıka ve kurut.','Sebzeleri ince doğra veya rendele.','Limon ve zeytinyağını karıştırıp servis öncesi ekle.'],
+    stepsEn: ['Wash and dry the greens thoroughly.','Slice or grate the vegetables.','Whisk lemon juice with olive oil and dress just before serving.'], portion: '120 g', prep: '12 dk', cook: '—', estimate: true
+  },
+  {
+    id: 'ezogelin-corbasi', name: 'Ezogelin Çorbası', en: 'Ezogelin Soup', category: 'Çorba', categoryEn: 'Soup',
+    description: 'Kırmızı mercimek, bulgur ve pirinçle hazırlanan geleneksel çorba.', descriptionEn: 'A traditional Turkish soup made with red lentils, bulgur and rice.',
+    image: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=82', calories: 164, protein: 7.8, carbs: 25.4, fat: 3.8, fiber: 5.2, salt: 1.2,
+    tags: ['vegan','vegetarian'], allergens: ['Gluten'], ingredients: [['Kırmızı mercimek','35 g'],['Bulgur','10 g'],['Pirinç','8 g'],['Soğan','20 g'],['Nane','1 g']],
+    ingredientsEn: [['Red lentils','35 g'],['Bulgur','10 g'],['Rice','8 g'],['Onion','20 g'],['Mint','1 g']],
+    steps: ['Mercimek, bulgur ve pirinci yıkayıp tencereye al.','Soğan ve su ekleyerek bakliyatlar yumuşayana kadar pişir.','Baharat ve nane ile lezzetlendir.'],
+    stepsEn: ['Rinse the lentils, bulgur and rice and place in a pot.','Add onion and water; simmer until tender.','Season with spices and mint.'], portion: '250 ml', prep: '10 dk', cook: '30 dk', estimate: true
+  },
+  {
+    id: 'firin-tavuk', name: 'Fırın Tavuk', en: 'Oven-Roasted Chicken', category: 'Ana yemek', categoryEn: 'Main course',
+    description: 'Baharatlarla marine edilip fırında pişirilmiş tavuk.', descriptionEn: 'Chicken marinated with herbs and roasted in the oven.',
+    image: 'https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=900&q=82', calories: 318, protein: 34.2, carbs: 4.1, fat: 18.2, fiber: 0.8, salt: 1.3,
+    tags: ['highProtein','glutenFree'], allergens: ['Süt ürünleri'], ingredients: [['Tavuk but','160 g'],['Yoğurt','15 g'],['Zeytinyağı','6 ml'],['Kekik','1 g'],['Tatlı toz biber','1 g']],
+    ingredientsEn: [['Chicken thigh','160 g'],['Yogurt','15 g'],['Olive oil','6 ml'],['Oregano','1 g'],['Sweet paprika','1 g']],
+    steps: ['Tavuğu yoğurt, yağ ve baharatlarla harmanla.','Önceden ısıtılmış fırın tepsisine yerleştir.','İçi tamamen pişene ve dışı renk alana kadar fırınla.'],
+    stepsEn: ['Coat the chicken with yogurt, oil and spices.','Place on a preheated oven tray.','Roast until thoroughly cooked and golden.'], portion: '180 g', prep: '15 dk', cook: '35 dk', estimate: true
+  },
+  {
+    id: 'peynirli-makarna', name: 'Peynirli Makarna', en: 'Pasta with Cheese', category: 'Yan yemek', categoryEn: 'Side dish',
+    description: 'Peynir ve hafif sosla harmanlanmış yumuşak dokulu makarna.', descriptionEn: 'Tender pasta tossed with cheese and a light sauce.',
+    image: 'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=82', calories: 354, protein: 13.4, carbs: 53.2, fat: 9.1, fiber: 2.8, salt: 1.0,
+    tags: ['vegetarian'], allergens: ['Gluten','Süt ürünleri'], ingredients: [['Makarna','75 g'],['Kaşar peyniri','20 g'],['Süt','20 ml'],['Tereyağı','5 g']],
+    ingredientsEn: [['Pasta','75 g'],['Kashar cheese','20 g'],['Milk','20 ml'],['Butter','5 g']],
+    steps: ['Makarnayı tuzlu kaynar suda al dente pişir.','Süt ve peyniri ayrı bir tavada ısıt.','Makarnayı sosla harmanlayıp sıcak servis et.'],
+    stepsEn: ['Cook the pasta al dente in salted boiling water.','Warm the milk and cheese in a separate pan.','Toss the pasta with the sauce and serve warm.'], portion: '220 g', prep: '5 dk', cook: '15 dk', estimate: true
+  },
+  {
+    id: 'ayran', name: 'Ayran', en: 'Ayran', category: 'İçecek', categoryEn: 'Drink',
+    description: 'Yoğurt, su ve az miktarda tuzla hazırlanan geleneksel içecek.', descriptionEn: 'A traditional yogurt drink made with water and a little salt.',
+    image: 'https://images.unsplash.com/photo-1553909489-cd47e0ef937f?auto=format&fit=crop&w=900&q=82', calories: 74, protein: 4.1, carbs: 5.2, fat: 3.8, fiber: 0, salt: 0.7,
+    tags: ['vegetarian','glutenFree'], allergens: ['Süt ürünleri'], ingredients: [['Yoğurt','100 g'],['Su','100 ml'],['Tuz','0.5 g']],
+    ingredientsEn: [['Yogurt','100 g'],['Water','100 ml'],['Salt','0.5 g']],
+    steps: ['Yoğurt ve soğuk suyu pürüzsüz olana kadar çırp.','Tuz ekleyip karıştır.','Soğuk servis et.'],
+    stepsEn: ['Whisk yogurt and cold water until smooth.','Add salt and mix.','Serve chilled.'], portion: '200 ml', prep: '3 dk', cook: '—', estimate: true
+  },
+  {
+    id: 'kuru-fasulye', name: 'Kuru Fasulye', en: 'White Bean Stew', category: 'Ana yemek', categoryEn: 'Main course',
+    description: 'Domatesli sos içinde pişirilmiş geleneksel kuru fasulye.', descriptionEn: 'Traditional white beans simmered in a tomato-based sauce.',
+    image: 'https://images.unsplash.com/photo-1515543904379-3d757afe72e4?auto=format&fit=crop&w=900&q=82', calories: 286, protein: 15.8, carbs: 38.6, fat: 7.4, fiber: 10.2, salt: 1.1,
+    tags: ['vegan','vegetarian','glutenFree','highProtein'], allergens: [], ingredients: [['Kuru fasulye','80 g'],['Soğan','25 g'],['Domates salçası','10 g'],['Zeytinyağı','6 ml']],
+    ingredientsEn: [['White beans','80 g'],['Onion','25 g'],['Tomato paste','10 g'],['Olive oil','6 ml']],
+    steps: ['Önceden ıslatılmış fasulyeyi yumuşayana kadar haşla.','Soğanı yağda sotele, salçayı ekle.','Fasulyeyi ve sıcak suyu ekleyip kısa süre kaynat.'],
+    stepsEn: ['Cook the soaked beans until tender.','Sauté onion in oil and add tomato paste.','Add beans and hot water and simmer briefly.'], portion: '220 g', prep: '12 dk', cook: '55 dk', estimate: true
+  },
+  {
+    id: 'izgara-kofte', name: 'Izgara Köfte', en: 'Grilled Meatballs', category: 'Ana yemek', categoryEn: 'Main course',
+    description: 'Baharatlı dana kıyma ile hazırlanan ızgara köfte.', descriptionEn: 'Grilled beef meatballs seasoned with herbs and spices.',
+    image: 'https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=900&q=82', calories: 367, protein: 27.4, carbs: 8.2, fat: 25.1, fiber: 0.9, salt: 1.3,
+    tags: ['highProtein'], allergens: ['Gluten içerebilir'], ingredients: [['Dana kıyma','140 g'],['Soğan','15 g'],['Galeta unu','10 g'],['Maydanoz','3 g']],
+    ingredientsEn: [['Ground beef','140 g'],['Onion','15 g'],['Breadcrumbs','10 g'],['Parsley','3 g']],
+    steps: ['Kıyma, rendelenmiş soğan, galeta unu ve baharatları yoğur.','Harçtan eşit köfteler şekillendir.','Önceden ısıtılmış ızgarada iki tarafını pişir.'],
+    stepsEn: ['Mix beef with grated onion, breadcrumbs and spices.','Shape into evenly sized meatballs.','Grill both sides on a preheated grill until cooked through.'], portion: '180 g', prep: '15 dk', cook: '12 dk', estimate: true
+  },
+  {
+    id: 'patates-puresi', name: 'Patates Püresi', en: 'Mashed Potatoes', category: 'Yan yemek', categoryEn: 'Side dish',
+    description: 'Süt ve tereyağıyla kremsi kıvama getirilen patates püresi.', descriptionEn: 'Creamy mashed potatoes blended with milk and butter.',
+    image: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=900&q=82', calories: 192, protein: 4.2, carbs: 29.6, fat: 6.7, fiber: 2.5, salt: 0.7,
+    tags: ['vegetarian','glutenFree'], allergens: ['Süt ürünleri'], ingredients: [['Patates','160 g'],['Süt','25 ml'],['Tereyağı','8 g'],['Tuz','0.5 g']],
+    ingredientsEn: [['Potato','160 g'],['Milk','25 ml'],['Butter','8 g'],['Salt','0.5 g']],
+    steps: ['Patatesleri soyup eşit boyutta doğra ve haşla.','Süzdükten sonra sıcakken ez.','Ilık süt ve tereyağını ekleyip pürüzsüzleştir.'],
+    stepsEn: ['Peel, cut and boil the potatoes until tender.','Drain and mash while hot.','Blend in warm milk and butter until smooth.'], portion: '180 g', prep: '10 dk', cook: '20 dk', estimate: true
+  },
+  {
+    id: 'coban-salata', name: 'Çoban Salata', en: 'Shepherd’s Salad', category: 'Salata', categoryEn: 'Salad',
+    description: 'Domates, salatalık, biber ve maydanozla hazırlanan ferah salata.', descriptionEn: 'A refreshing salad of tomato, cucumber, pepper and parsley.',
+    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=900&q=82', calories: 92, protein: 2.1, carbs: 10.8, fat: 4.9, fiber: 3.1, salt: 0.5,
+    tags: ['vegan','vegetarian','glutenFree','lowCal'], allergens: [], ingredients: [['Domates','60 g'],['Salatalık','40 g'],['Yeşil biber','15 g'],['Maydanoz','5 g'],['Zeytinyağı','5 ml']],
+    ingredientsEn: [['Tomato','60 g'],['Cucumber','40 g'],['Green pepper','15 g'],['Parsley','5 g'],['Olive oil','5 ml']],
+    steps: ['Sebzeleri yıka ve küçük küpler halinde doğra.','Maydanozu ince kıy.','Zeytinyağı ve limonla harmanlayarak servis et.'],
+    stepsEn: ['Wash and dice the vegetables.','Finely chop the parsley.','Toss with olive oil and lemon juice before serving.'], portion: '130 g', prep: '10 dk', cook: '—', estimate: true
+  }
+];
+
+export const weekMenu = [
+  { day: 'Pazartesi', dayEn: 'Monday', short: 'Pzt', date: '23', items: ['ezogelin-corbasi','firin-tavuk','bulgur-pilavi','ayran'] },
+  { day: 'Salı', dayEn: 'Tuesday', short: 'Sal', date: '24', items: ['domates-corbasi','et-yahni','bulgur-pilavi','mevsim-salata'] },
+  { day: 'Çarşamba', dayEn: 'Wednesday', short: 'Çar', date: '25', items: ['ezogelin-corbasi','izgara-kofte','patates-puresi','coban-salata'] },
+  { day: 'Perşembe', dayEn: 'Thursday', short: 'Per', date: '26', items: ['domates-corbasi','firin-tavuk','peynirli-makarna','ayran'] },
+  { day: 'Cuma', dayEn: 'Friday', short: 'Cum', date: '27', items: ['kuru-fasulye','bulgur-pilavi','coban-salata','ayran'] }
+];
+
+export const demoReviews = [
+  { id: 'demo-1', user: 'MutfakMeraklısı', initial: 'M', dishId: 'et-yahni', text: 'Etin pişme kıvamı ve yanındaki bulgur pilavı güzel bir uyum oluşturuyor. Porsiyon bilgisini de görmek faydalı.', date: '2026-11-24T10:15:00', demo: true },
+  { id: 'demo-2', user: 'tabagimda', initial: 'T', dishId: 'mevsim-salata', text: 'Salata gibi sade seçeneklerin içerik ve alerjen bilgisinin açıkça belirtilmesi çok iyi olur. Limonlu sosu seviyorum.', date: '2026-11-23T13:40:00', image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=500&q=75', demo: true },
+  { id: 'demo-3', user: 'LezzetNotları', initial: 'L', dishId: 'domates-corbasi', text: 'Klasik bir başlangıç. Tarifin tahmini olduğunun belirtilmesi önemli; kurum reçetesiyle karıştırılmamalı.', date: '2026-11-22T12:05:00', demo: true }
+];
+
+export const missingDishes = [
+  { name: 'Tavuklu Sebzeli Makarna', missing: 'Fotoğraf · Tarif · Besin değerleri', status: 'Eksik' },
+  { name: 'Etli Nohut', missing: 'Malzemeler · Besin değerleri', status: 'Eksik' },
+  { name: 'Mevsim Salata', missing: 'Alerjen kontrolü', status: 'Kontrol' }
+];

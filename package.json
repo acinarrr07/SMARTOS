@@ -1,0 +1,9 @@
+{
+  "name": "smart-meal-guide",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate:frontend": "node scripts/validate_frontend.mjs"
+  }
+}
